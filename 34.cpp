@@ -4,8 +4,6 @@ public:
     vector<int> searchRange(vector<int> &nums, int target)
     {
         vector<int> res(2, -1);
-        if (nums.size() == 0)
-            return res;
         res[0] = search(nums, target, true);
         if (res[0] == -1)
             return res;
